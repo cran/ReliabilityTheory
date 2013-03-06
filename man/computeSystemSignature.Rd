@@ -40,9 +40,9 @@ Louis J.M. Aslett \email{louis@maths.tcd.ie} (\url{http://www.louisaslett.com/})
 Please feel free to email \email{louis@maths.tcd.ie} with any queries or if you encounter errors when running this function.
 }
 
-%\seealso{
-%\code{\link{computeNetworkSignature}}
-%}
+\seealso{
+\code{\link{computeSystemSurvivalSignature}}
+}
 \examples{
 # Find the signature of two component series system (which is just s=(1, 0))
 computeSystemSignature(graph.formula(s -- 1 -- 2 -- t))
@@ -50,7 +50,8 @@ computeSystemSignature(graph.formula(s -- 1 -- 2 -- t))
 # Find the signature of two component parallel system (which is just s=(0, 1))
 computeSystemSignature(graph.formula(s -- 1:2 -- t))
 
-# Find the signature of the five component 'bridge' system (which is s=(0, 0.2, 0.6, 0.2, 0))
+# Find the signature of the five component 'bridge' system (which
+# is s=(0, 0.2, 0.6, 0.2, 0))
 computeSystemSignature(graph.formula(s -- 1 -- 2 -- t, s -- 3 -- 4 -- t, 1:2 -- 5 -- 3:4))
 }
 \keyword{ system }

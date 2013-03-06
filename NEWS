@@ -1,3 +1,9 @@
+ReliabilityTheory 0.1.1
+=======================
+
+ * Fix edge case bug in cut set computation
+ * New function to compute survival signature
+
 ReliabilityTheory 0.1.0
 =======================
 

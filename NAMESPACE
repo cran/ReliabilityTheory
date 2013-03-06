@@ -5,6 +5,8 @@
 export(computeSystemSignature)
 export(computeNetworkSignature)
 
+export(computeSystemSurvivalSignature)
+
 export(expectedSystemLifetimeExp)
 export(expectedNetworkLifetimeExp)
 export(expectedSignatureLifetimeExp)
