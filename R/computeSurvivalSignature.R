@@ -24,6 +24,8 @@ computeSystemSurvivalSignature <- function(graph, cutsets = NULL, frac = FALSE) 
   for(type in unique(na.omit(V(graph)$compType))) {
     CbyType[[type]] <- as.integer(V(graph)[which(V(graph)$compType==type)])
   }
+  if(length(names(CbyType)) > 1)
+    CbyType <- CbyType[order(names(CbyType))]
   
   # Handy stuff to know
   numC <- length(na.omit(unique(V(graph)$compType))) # number of types of component
@@ -55,7 +57,7 @@ computeSystemSurvivalSignature <- function(graph, cutsets = NULL, frac = FALSE) 
     if( sum(vapply(cutsets, function(x) { prod(x %in% failed) == 1 }, TRUE)) == 0 ) { # TRUE only if the system is working
       #numWorkingByType <- sapply(CbyType, function(x) { sum(working%in%x) })
       #print(which(apply(survSig[,1:numC], 1, identical, y=as.double(vapply(CbyType, function(x) { sum(working%in%x) }, 1)))))      
-      survSig[which(apply(survSig[,1:numC], 1, identical, y=as.double(vapply(CbyType, function(x) { sum(working%in%x) }, 1)))),numC+1] <- survSig[which(apply(survSig[,1:numC], 1, identical, y=as.double(vapply(CbyType, function(x) { sum(working%in%x) }, 1)))),numC+1]+1
+      survSig[which(apply(survSig[,1:numC,drop=FALSE], 1, identical, y=as.double(vapply(CbyType, function(x) { sum(working%in%x) }, 1)))),numC+1] <- survSig[which(apply(survSig[,1:numC,drop=FALSE], 1, identical, y=as.double(vapply(CbyType, function(x) { sum(working%in%x) }, 1)))),numC+1]+1
     }
   }
   
@@ -67,7 +69,7 @@ computeSystemSurvivalSignature <- function(graph, cutsets = NULL, frac = FALSE) 
     names(survSig) <- c(names(CbyType), "Probability")
   }
   if(!frac) {
-    survSig[,numC+1] <- survSig[,numC+1]/apply(survSig[,-(numC+1)], 1, function(x) { prod(choose(Cnums, x)) })
+    survSig[,numC+1] <- survSig[,numC+1]/apply(survSig[,-(numC+1),drop=FALSE], 1, function(x) { prod(choose(Cnums, x)) })
   } else {
     survSig[,numC+1] <- apply(survSig, 1, function(x) {
       cd <- gcd(x[numC+1], prod(choose(Cnums, x[-(numC+1)])))

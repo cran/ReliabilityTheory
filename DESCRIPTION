@@ -4,9 +4,9 @@ Description: A variety of tools useful for performing structural
         reliability analysis, such as with structure function and
         system signatures.  Plans to expand more widely.
 URL: http://www.louisaslett.com/
-Version: 0.1.1
-Maintainer: Louis Aslett <louis@maths.tcd.ie>
-Author: Louis Aslett <louis@maths.tcd.ie>
+Version: 0.1.4
+Maintainer: Louis Aslett <aslett@stats.ox.ac.uk>
+Author: Louis Aslett <aslett@stats.ox.ac.uk>
 Depends: igraph (>= 0.6.5-1)
 Imports: sfsmisc, combinat, FRACTION, mcmc, PhaseType (>= 0.1.3),
         actuar, HI
@@ -14,7 +14,7 @@ Suggests: testthat
 License: GPL-2 | GPL-3
 ByteCompile: yes
 LazyLoad: yes
-Packaged: 2013-03-06 18:55:01 UTC; louis
 NeedsCompilation: no
+Packaged: 2014-06-12 16:19:45 UTC; louis
 Repository: CRAN
-Date/Publication: 2013-03-07 08:10:29
+Date/Publication: 2014-06-13 01:12:19

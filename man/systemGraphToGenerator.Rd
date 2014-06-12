@@ -34,17 +34,18 @@ Full details are in Aslett (2012).
 Aslett, L. J. M. (2012), \emph{MCMC for Inference on Phase-type and Masked System Lifetime Models}, PhD Thesis, Trinity College Dublin.
 }
 \author{
-Louis J.M. Aslett \email{louis@maths.tcd.ie} (\url{http://www.louisaslett.com/})
+Louis J.M. Aslett \email{aslett@stats.ox.ac.uk} (\url{http://www.louisaslett.com/})
 }
 \note{
-Please feel free to email \email{louis@maths.tcd.ie} with any queries or if you encounter errors when running this function.
+Please feel free to email \email{aslett@stats.ox.ac.uk} with any queries or if you encounter errors when running this function.
 }
 
 %\seealso{
 %\code{\link{computeNetworkSignature}}
 %}
 \examples{
-# Get the generator representing a repairable 5 component 'bridge' system with failure rate 1 and repair rate 365.
+# Get the generator representing a repairable 5 component 'bridge' system with
+# failure rate 1 and repair rate 365.
 data(sccsO5)
 G <- systemGraphToGenerator(sccsO5[[18]]$graph, 1, 365)
 }

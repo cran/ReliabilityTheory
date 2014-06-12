@@ -5,7 +5,8 @@
 Performs Bayesian inference via a signature based data augmentation MCMC scheme for masked system lifetime data for any custom component lifetime distribution.  The underlying assumption is of exchangeability at the system level (iid components within each exchangeable system).
 }
 \usage{
-maskedInferenceEXCHCustom(t, signature, cdfComp, pdfComp, rParmGivenData, rCompGivenParm, startCompParm, startHypParm, iter, ...)
+maskedInferenceEXCHCustom(t, signature, cdfComp, pdfComp, rParmGivenData,
+                          rCompGivenParm, startCompParm, startHypParm, iter, ...)
 }
 \arguments{
   \item{t}{
@@ -66,17 +67,18 @@ The arguments of the function are the prerequisites described in Algorithm 6.2 o
 Aslett, L. J. M. (2012), \emph{MCMC for Inference on Phase-type and Masked System Lifetime Models}, PhD Thesis, Trinity College Dublin.
 }
 \author{
-Louis J.M. Aslett \email{louis@maths.tcd.ie} (\url{http://www.louisaslett.com/})
+Louis J.M. Aslett \email{aslett@stats.ox.ac.uk} (\url{http://www.louisaslett.com/})
 }
 \note{
-Please feel free to email \email{louis@maths.tcd.ie} with any queries or if you encounter errors when running this function.
+Please feel free to email \email{aslett@stats.ox.ac.uk} with any queries or if you encounter errors when running this function.
 }
 
 \seealso{
 \code{\link{computeSystemSignature}}
 }
 \examples{
-# Please inspect the source of this package, file MaskedLifetimeInference_Exponential.R for example usage (see details section)
+# Please inspect the source of this package, file MaskedLifetimeInference_Exponential.R
+# for example usage (see details section)
 }
 \keyword{ masked system lifetime model }
 \keyword{ bayesian inference }

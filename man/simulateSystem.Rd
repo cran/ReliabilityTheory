@@ -33,17 +33,18 @@ This function then generates iid realisations of masked lifetimes.
 %Samaniego, F. J. (2007), \emph{System Signatures and Their Applications in Engineering Reliability}, Springer.
 %}
 \author{
-Louis J.M. Aslett \email{louis@maths.tcd.ie} (\url{http://www.louisaslett.com/})
+Louis J.M. Aslett \email{aslett@stats.ox.ac.uk} (\url{http://www.louisaslett.com/})
 }
 \note{
-Please feel free to email \email{louis@maths.tcd.ie} with any queries or if you encounter errors when running this function.
+Please feel free to email \email{aslett@stats.ox.ac.uk} with any queries or if you encounter errors when running this function.
 }
 
 %\seealso{
 %\code{\link{computeNetworkSignature}}
 %}
 \examples{
-# Simulate 20 masked lifetimes of a two component series system with Exponential(2) component lifetimes
+# Simulate 20 masked lifetimes of a two component series system with Exponential(2)
+# component lifetimes
 # Using igraph object ...
 simulateSystem(graph.formula(s -- 1 -- 2 -- t), 20, rexp, rate=2)
 
