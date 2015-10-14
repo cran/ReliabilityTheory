@@ -1,6 +1,6 @@
-3486d1d06d76fa5f4d79f350347fb09c *DESCRIPTION
-b9ec3c76bd7adf8225b713bc01096f0a *NAMESPACE
-9fa0a44f830cfc67398cda6a0e75a54b *NEWS
+edb9a178b8c7aa4b965d213f2c646fd3 *DESCRIPTION
+605049dc5c748dc0d7177ab98d17e41e *NAMESPACE
+a7c08adba5d5723046a9e66ac120a6ff *NEWS
 88982f8ba36b449506c27e36e0affda2 *R/CoherentNetworksOfOrder.R
 89e126496fd9dce5eca3a6c9f536a93d *R/CoherentSystemsOfOrder.R
 152bf0f533f0e4cc3028f93bbd37d1bd *R/ComputeSignature.R
@@ -9,10 +9,11 @@ b9ec3c76bd7adf8225b713bc01096f0a *NAMESPACE
 ff5162b9a97ac6b111f853a8ef079e77 *R/MaskedLifetimeInference.R
 93e584161467d6013e4bc740dbecfe6a *R/MaskedLifetimeInference_Exponential.R
 774f03333310d538ac68953fb1e112d9 *R/MinimalEdgeCutSets.R
-6fdf866ccc396d2aa965f45b6084ad2b *R/MinimalVertexPairCutSets.R
+93a849350b379016db85a06bd51da387 *R/MinimalVertexPairCutSets.R
 0722eac59a64958f380cb53c76e3c104 *R/Simulate.R
 38bfcee882121945e68779bdaec80f0d *R/computeSurvivalSignature.R
 878166e2b9e539b5c046e171d049ada2 *R/systemGraphToGenerator.R
+bf94fed4cd20e2f5f1364d9e01b40b43 *README.md
 cc734ab1189dbd1af97d70a811522802 *data/cnO2.RData
 67c3eb565aa9448848fd7a6cb25ae918 *data/cnO3.RData
 cd574dda7ee26adbe41e49bff58a3468 *data/sccsO2.RData
@@ -21,7 +22,7 @@ a6cf1675c76e35d08f848d4bf55b8b93 *data/sccsO4.RData
 d3cddf326db9246d71b0cae6e85df028 *data/sccsO5.RData
 6e63671de5db171e772661f42b935709 *inst/CITATION
 1c1de1432c7218b66094bbacc86d1c1e *inst/tests/test-SurvivalSignature.R
-3e9b282520e7f230b3cab29282bf3190 *man/ReliabilityTheory-package.Rd
+841021bfe04ce58a57e055c82d558496 *man/ReliabilityTheory-package.Rd
 e76e2de5dd80d97fc1e74446fea2240a *man/cnO2.Rd
 fc36d5d1a0b08dd18057c7089140ee4e *man/cnO3.Rd
 200e74d9beeb369bf62342ce17c111ef *man/computeSystemSignature.Rd
