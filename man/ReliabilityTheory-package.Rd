@@ -10,8 +10,8 @@ A collection of tools for working structural reliability problems, such as catal
 \tabular{ll}{
 Package: \tab ReliabilityTheory\cr
 Type: \tab Package\cr
-Version: \tab 0.1.5\cr
-Date: \tab 2015-10-13\cr
+Version: \tab 0.2.0\cr
+Date: \tab 2023-05-03\cr
 License: \tab GPL-2 | GPL-3\cr
 LazyLoad: \tab yes\cr
 }
@@ -19,7 +19,7 @@ LazyLoad: \tab yes\cr
 %~~ functions ~~
 }
 \author{
-Louis J. M. Aslett, \email{aslett@stats.ox.ac.uk} (\url{http://www.louisaslett.com})
+Louis J. M. Aslett, \email{louis.aslett@durham.ac.uk} (\url{https://www.louisaslett.com})
 }
 \references{
 Aslett, L. J. M. (2012), \emph{MCMC for Inference on Phase-type and Masked System Lifetime Models}, PhD Thesis, Trinity College Dublin.
@@ -29,8 +29,3 @@ Samaniego, F. J. (2007), \emph{System Signatures and Their Applications in Engin
 \keyword{ reliability theory }
 \keyword{ system signature }
 \keyword{ signature }
-%\seealso{
-%%~~ Optional links to other man pages, e.g. ~~
-%%~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-%}
-%\examples{}

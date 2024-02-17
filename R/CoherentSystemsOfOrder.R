@@ -22,7 +22,7 @@ coherentSystemsOfOrder <- function(n) {
   i <- 1
   progress <- 0.0
   for(m in 1:tot) {
-    if(round(m*100/tot, 1) != progress) { progress <- round(m*100/tot, 1); cat("\r", progress, "%   "); }
+    if(round(m*100/tot, 1) != progress) { progress <- round(m*100/tot, 1); message("\r", progress, "%   "); }
     # Make the graph
     adjacency[upper.tri(adjacency)] <- c(digitsBase(m, 2, ((n+2)*(n+2)-n-2)/2))
     # Exclude possibility of direct s,t connection
@@ -93,4 +93,21 @@ coherentSystemsOfOrder <- function(n) {
 # sccsO6 <- coherentSystemsOfOrder(6)
 # o <- order(unlist(lapply(sccsO6, function(x) { expectedSignatureLifetimeExp(x$signature)})))
 # sccsO6 <- sccsO6[o]
+# save(sccsO6, file="sccsO6.RData", compress=TRUE)
+
+## When igraph version advanced, we need to update the graph versions held in these lists
+# data("sccsO2")
+# sccsO2 <- lapply(sccsO2, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(sccsO2, file="sccsO2.RData", compress=TRUE)
+# data("sccsO3")
+# sccsO3 <- lapply(sccsO3, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(sccsO3, file="sccsO3.RData", compress=TRUE)
+# data("sccsO4")
+# sccsO4 <- lapply(sccsO4, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(sccsO4, file="sccsO4.RData", compress=TRUE)
+# data("sccsO5")
+# sccsO5 <- lapply(sccsO5, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(sccsO5, file="sccsO5.RData", compress=TRUE)
+# data("sccsO6")
+# sccsO6 <- lapply(sccsO6, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
 # save(sccsO6, file="sccsO6.RData", compress=TRUE)

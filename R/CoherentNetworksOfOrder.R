@@ -8,7 +8,7 @@ coherentNetworksOfOrder <- function(n) {
   i <- 1
   progress <- 0.0
   for(m in 1:tot) {
-    if(round(m*100/tot, 1) != progress) { progress <- round(m*100/tot, 1); cat("\r", progress, "%   "); }
+    if(round(m*100/tot, 1) != progress) { progress <- round(m*100/tot, 1); message("\r", progress, "%   "); }
     # Make the graph
     adjacency[upper.tri(adjacency)] <- c(digitsBase(m, 2, ((n+2)*(n+2)-n-2)/2))
     # Exclude possibility of direct s,t connection
@@ -60,4 +60,15 @@ coherentNetworksOfOrder <- function(n) {
 # cnO4 <- coherentNetworksOfOrder(4)
 # o <- order(unlist(lapply(cnO4, function(x) { expectedSignatureLifetimeExp(x$signature)})))
 # cnO4 <- cnO4[o]
+# save(cnO4, file="cnO4.RData", compress=TRUE)
+
+## When igraph version advanced, we need to update the graph versions held in these lists
+# data("cnO2")
+# cnO2 <- lapply(cnO2, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(cnO2, file="cnO2.RData", compress=TRUE)
+# data("cnO3")
+# cnO3 <- lapply(cnO3, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
+# save(cnO3, file="cnO3.RData", compress=TRUE)
+# data("cnO4")
+# cnO4 <- lapply(cnO4, function(x) { x$graph <- igraph::upgrade_graph(x$graph); return(x); })
 # save(cnO4, file="cnO4.RData", compress=TRUE)

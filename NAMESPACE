@@ -2,10 +2,16 @@
 #export(coherentSystemsOfOrder)
 #export(coherentNetworksOfOrder)
 
+export(createSystem)
+export(setCompTypes)
+
 export(computeSystemSignature)
 export(computeNetworkSignature)
 
 export(computeSystemSurvivalSignature)
+
+export(nonParBayesSystemInference)
+export(nonParBayesSystemInferencePriorSets)
 
 export(expectedSystemLifetimeExp)
 export(expectedNetworkLifetimeExp)
@@ -32,6 +38,7 @@ import(PhaseType)
 importFrom(actuar, rphtype)
 importFrom(actuar, pphtype)
 importFrom(actuar, dphtype)
-importFrom(HI, arms)
 import(igraph)
-importFrom("stats", "dbinom", "dexp", "na.omit", "optim", "pexp", "rexp", "rgamma", "rnorm", "runif")
+importFrom(stats, dbinom, dexp, na.omit, optim, pexp, rexp, rgamma, rnorm, runif)
+importFrom(parallel, mclapply, detectCores)
+importFrom(utils, hasName)
