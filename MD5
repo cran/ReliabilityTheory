@@ -1,6 +1,6 @@
-a328abfa77bfcc17a80edc08f87b312c *DESCRIPTION
+a22ea8d2850bbe4ae8f80ef06c0808f4 *DESCRIPTION
 f10219750e592e1c5d1db28aa6145da6 *NAMESPACE
-8b4b134bc4fbd35378b15c370b9476e9 *NEWS
+e0c00e8c6e101fb8a41ed6573c2dd4ca *NEWS.md
 f4d45cdc052479dacf26d0aef59f8a82 *R/CoherentNetworksOfOrder.R
 61a09d7656176b7c4fd06398246a2551 *R/CoherentSystemsOfOrder.R
 1f332c0faf44528bf793e1087cd2cfb5 *R/ComputeSignature.R
@@ -18,7 +18,6 @@ fd057e32ff8557011897280ea409bcc9 *R/computeSurvivalSignature.R
 da9f36125553620109e36d0839eef2ae *R/nonParBayesSystemInferencePriorSets.R
 1a30005147be5aa81234451fa19957fd *R/nonParBayesSystemInferencePriorSetsOLD.R
 75a736250a111c37b579d5c5d4152cc6 *R/nonParBayesSystemInferencePriorSetsTEST.R
-35a451d29e5f5f2378c207338a0b7d3d *R/plot.R
 90e1b7d0f05a353567f6f174c48cfe4c *R/setCompTypes.R
 62b469e612e24a55ce8cc0134373db73 *R/systemGraphToGenerator.R
 cc9047d43d18aaf10d467ca69b1a83d5 *data/cnO2.RData
@@ -48,7 +47,7 @@ e5592ec554041c790edfbff32ca7601f *man/sccsO4.Rd
 683718c69a727300173cba907117323d *man/sccsO5.Rd
 5829469804ad938cdbcf7ef834a150b3 *man/setCompTypes.Rd
 c2f8216f9a30811ba1a183cd37865c9b *man/simulateSystem.Rd
-3e7b12afa896b8f18e9222e3808fc357 *man/systemGraphToGenerator.Rd
+630a4b8cc06897affdac6894989d3de7 *man/systemGraphToGenerator.Rd
 748d8bc5320110ca3e914b6fe1052cdd *tests/testthat.R
 6a41634d7e07a83f172a5023a336043e *tests/testthat/test-AslettEtAl2015.R
 2f898029b8da2bb94ce4040b5509e2e2 *tests/testthat/test-SurvivalSignature.R
